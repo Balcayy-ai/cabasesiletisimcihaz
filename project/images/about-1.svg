@@ -1,0 +1,31 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Klinik görseli placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="140" y1="160" x2="1060" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFE6FF"/>
+      <stop offset="0.4" stop-color="#2AA8D8"/>
+      <stop offset="1" stop-color="#0B3B5A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <rect x="90" y="110" width="1020" height="680" rx="56" fill="#FFFFFF" stroke="#E6EDF5" stroke-width="6"/>
+
+  <rect x="150" y="190" width="420" height="64" rx="18" fill="#0B3B5A" opacity="0.08"/>
+  <rect x="150" y="280" width="540" height="30" rx="12" fill="#0B3B5A" opacity="0.08"/>
+  <rect x="150" y="330" width="480" height="30" rx="12" fill="#0B3B5A" opacity="0.08"/>
+  <rect x="150" y="380" width="520" height="30" rx="12" fill="#0B3B5A" opacity="0.08"/>
+
+  <rect x="740" y="210" width="320" height="460" rx="40" fill="url(#accent)" opacity="0.18"/>
+  <path d="M820 590c0-120 70-220 170-220 96 0 140 72 140 160 0 92-52 160-132 160-96 0-178-36-178-100Z" fill="url(#accent)" opacity="0.28"/>
+
+  <text x="150" y="245" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="40" font-weight="800" fill="#0B3B5A">
+    Kurumsal Görsel
+  </text>
+  <text x="150" y="485" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="600" fill="#5B677A">
+    (placeholder)
+  </text>
+</svg>

@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b3b5a" />
+
+    <title>Cab As İşitme | Ana Sayfa</title>
+    <meta
+      name="description"
+      content="Cab As İşitme; işitme cihazı çözümleri, uygulama ve danışmanlık hizmetleri. Modern teknoloji, kişiye özel uyarlama ve destek."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Cab As İşitme" />
+
+    <link rel="canonical" href="https://example.com/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="tr_TR" />
+    <meta property="og:title" content="Cab As İşitme | Ana Sayfa" />
+    <meta
+      property="og:description"
+      content="İşitme cihazı çözümleri, uyarlama ve takip. Modern teknoloji ve kişiye özel destek."
+    />
+    <meta property="og:url" content="https://example.com/" />
+    <meta property="og:image" content="https://example.com/project/images/og-cover.svg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">İçeriğe atla</a>
+
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <div class="topbar-left" aria-label="İletişim kısayolları">
+          <a class="topbar-link" href="tel:+903124340207">
+            <svg class="topbar-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M6.6 10.8c1.5 2.9 3.7 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.6.6 4 .6.6 0 1 .4 1 1V21c0 .6-.4 1-1 1C10.1 22 2 13.9 2 3c0-.6.4-1 1-1h3.9c.6 0 1 .4 1 1 0 1.4.2 2.8.6 4 .1.4 0 .8-.3 1.1l-2.6 2.7Z"
+              />
+            </svg>
+            0 (312) 434 02 07
+          </a>
+          <a class="topbar-link" href="mailto:cabases@gmail.com">
+            <svg class="topbar-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"
+              />
+            </svg>
+            cabases@gmail.com
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html" aria-label="Cab As İşitme ana sayfa">
+          <img
+            class="brand-logo"
+            src="./images/brand-logo.png"
+            width="140"
+            height="34"
+            alt="Cab As İşitme"
+            decoding="async"
+          />
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-nav-toggle>
+          Menü
+        </button>
+
+        <nav id="primary-nav" class="nav" aria-label="Ana menü" data-nav>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html">Ana Sayfa</a></li>
+            <li class="nav-item has-mega" data-mega>
+              <button
+                class="nav-link nav-link-button"
+                type="button"
+                aria-expanded="false"
+                aria-controls="mega-products"
+                data-mega-toggle
+              >
+                Ürünler
+                <span class="chev" aria-hidden="true"></span>
+              </button>
+              <div id="mega-products" class="mega" role="region" aria-label="Ürünler menü" data-mega-panel>
+                <div class="mega-split">
+                  <div class="mega-split-cats" role="tablist" aria-label="Ürün kategorileri">
+                    <button type="button" class="mega-cat is-active" role="tab" aria-selected="true" data-mega-tab="isitme" id="mega-tab-isitme">
+                      İşitme Cihazları
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="baglanti" id="mega-tab-baglanti">
+                      Bağlantı
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="sarj" id="mega-tab-sarj">
+                      Şarj cihazları ve Aksesuarlar
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="isitme-hakkinda" id="mega-tab-isitme-hakkinda">
+                      İşitme hakkında
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="tinnitus" id="mega-tab-tinnitus">
+                      Tinnitus
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="wellbeing" id="mega-tab-wellbeing">
+                      My Wellbeing
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="servis" id="mega-tab-servis">
+                      Servis ve destek
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="blog" id="mega-tab-blog">
+                      Blog
+                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
+                    </button>
+                  </div>
+                  <div class="mega-split-detail">
+                    <div class="mega-panel" role="tabpanel" data-mega-content="isitme" aria-labelledby="mega-tab-isitme">
+                      <p class="mega-panel-title">İşitme Cihazları</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./sss.html#isitme-cihaz-nasil">İşitme cihazları nasıl çalışır?</a></li>
+                        <li><a href="./urunler.html#kulak-ici">Kulak içi modeller</a></li>
+                        <li><a href="./urunler.html#kulak-arkasi">Kulak arkası modeller</a></li>
+                        <li><a href="./urunler.html#sarjli">Şarjlı modeller</a></li>
+                        <li><a href="./urunler.html">Tüm ürünleri görüntüle</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="baglanti" aria-labelledby="mega-tab-baglanti">
+                      <p class="mega-panel-title">Bağlantı</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./urunler.html#bluetooth">Bluetooth ve kablosuz bağlantı</a></li>
+                        <li><a href="./sss.html#bluetooth">Bluetooth bağlantısı (SSS)</a></li>
+                        <li><a href="./urunler.html#destek">Uygulama ve uzaktan destek</a></li>
+                        <li><a href="./iletisim.html">Bağlantı danışmanlığı için iletişim</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="sarj" aria-labelledby="mega-tab-sarj">
+                      <p class="mega-panel-title">Şarj cihazları ve Aksesuarlar</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./urunler.html#sarjli">Şarj çözümleri</a></li>
+                        <li><a href="./urunler.html#aksesuar">Aksesuarlar</a></li>
+                        <li><a href="./urunler.html#aksesuar">TV ve multimedya aksesuarları</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="isitme-hakkinda" aria-labelledby="mega-tab-isitme-hakkinda">
+                      <p class="mega-panel-title">İşitme hakkında</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./sss.html#ilk-kez">İlk kez kullananlar için SSS</a></li>
+                        <li><a href="./sss.html#isitme-turu-derece">İşitme kaybı türü ve derecesi</a></li>
+                        <li><a href="./sss.html#modeller">Hangi modeller mevcut?</a></li>
+                        <li><a href="./sss.html#gurultu-ortam">Gürültülü ortamlarda dinleme</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="tinnitus" aria-labelledby="mega-tab-tinnitus">
+                      <p class="mega-panel-title">Tinnitus</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./sss.html#tinnitus-neden">Tinnitusun nedenleri</a></li>
+                        <li><a href="./sss.html#tinnitus-terapi">Tinnitus yönetimi ve terapi</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="wellbeing" aria-labelledby="mega-tab-wellbeing">
+                      <p class="mega-panel-title">My Wellbeing</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./sss.html#alism-suresi">Cihaza alışma süreci</a></li>
+                        <li><a href="./urunler.html#konfor">Konfor ve uyarlama</a></li>
+                        <li><a href="./iletisim.html">Kişisel danışmanlık</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="servis" aria-labelledby="mega-tab-servis">
+                      <p class="mega-panel-title">Servis ve destek</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./iletisim.html">İletişim ve randevu</a></li>
+                        <li><a href="./hakkimizda.html">Hakkımızda</a></li>
+                        <li><a href="./sss.html">Sıkça sorulan sorular</a></li>
+                      </ul>
+                    </div>
+                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="blog" aria-labelledby="mega-tab-blog">
+                      <p class="mega-panel-title">Blog</p>
+                      <ul class="mega-panel-list">
+                        <li><a href="./sss.html#blog-yakinda">Yakında: blog yazıları</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="mega-split-foot">
+                  <a class="button button-sm" href="./iletisim.html">Ön görüşme</a>
+                  <a class="text-link text-link-inline" href="./urunler.html">Tüm ürünler</a>
+                </div>
+              </div>
+            </li>
+            <li><a class="nav-link" href="./hakkimizda.html">Hakkımızda</a></li>
+            <li><a class="nav-link" href="./iletisim.html">İletişim</a></li>
+            <li><a class="nav-link" href="./sss.html">Sıkça Sorulan Sorular</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-right">
+          <a
+            class="button nav-whatsapp"
+            href="https://wa.me/905387137283?text=Merhaba%2C%20bilgi%20almak%20istiyorum."
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp ile iletişim"
+          >
+            <svg class="wa-icon" viewBox="0 0 32 32" aria-hidden="true">
+              <path
+                fill="currentColor"
+                d="M19.11 17.46c-.28-.14-1.62-.8-1.87-.9-.25-.09-.43-.14-.61.14-.18.28-.7.9-.86 1.08-.16.18-.32.2-.6.07-.28-.14-1.17-.43-2.22-1.36-.82-.73-1.37-1.63-1.53-1.9-.16-.28-.02-.43.12-.57.12-.12.28-.32.41-.48.14-.16.18-.28.28-.46.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.47h-.52c-.18 0-.48.07-.73.34-.25.28-.96.94-.96 2.29s.98 2.66 1.12 2.84c.14.18 1.93 2.95 4.68 4.13.65.28 1.16.45 1.55.58.65.21 1.25.18 1.72.11.52-.08 1.62-.66 1.85-1.3.23-.64.23-1.19.16-1.3-.07-.12-.25-.18-.52-.32ZM16 3C8.83 3 3 8.6 3 15.5c0 2.2.62 4.35 1.8 6.23L3.62 29l7.56-1.95A13.3 13.3 0 0 0 16 28c7.17 0 13-5.6 13-12.5S23.17 3 16 3Zm0 22.7c-2.05 0-4.05-.56-5.78-1.63l-.41-.25-4.48 1.16.99-4.27-.27-.43A10.8 10.8 0 0 1 5.2 15.5C5.2 9.8 10.04 5.2 16 5.2c5.96 0 10.8 4.6 10.8 10.3 0 5.7-4.84 10.2-10.8 10.2Z"
+              />
+            </svg>
+            <span class="wa-label">WhatsApp İletişim</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <h1 class="page-title">Daha net duymanız için kişiye özel çözümler</h1>
+          <p class="page-subtitle">İşitme cihazı danışmanlığı, uyarlama ve takip hizmetleri.</p>
+        </div>
+      </section>
+
+      <section class="content home-mega-section" aria-labelledby="home-mega-heading">
+        <div class="container">
+          <header class="home-mega-intro">
+            <h2 id="home-mega-heading" class="home-mega-title">Ürün rehberi</h2>
+            <p class="home-mega-lead muted">
+              Aşağıdaki kutulara ürün görsellerinizi ekleyebilirsiniz; şimdilik yer tutucu alanlar kullanılıyor.
+            </p>
+          </header>
+
+          <ul class="home-mega-grid">
+            <li>
+              <a class="home-mega-card" href="./urunler.html#kulak-ici">
+              <div class="home-mega-visual">
+                <!-- Görsel eklendiğinde: <img class="home-mega-img" src="./images/..." alt="Kulak içi işitme cihazları" /> -->
+              </div>
+              <div class="home-mega-card-body">
+                <h3 class="home-mega-card-title">Kulak İçi</h3>
+                <p class="home-mega-card-desc">Görünmez ve kompakt modeller.</p>
+              </div>
+              </a>
+            </li>
+            <li>
+              <a class="home-mega-card" href="./urunler.html#kulak-arkasi">
+              <div class="home-mega-visual">
+                <!-- <img class="home-mega-img" src="./images/..." alt="Kulak arkası işitme cihazları" /> -->
+              </div>
+              <div class="home-mega-card-body">
+                <h3 class="home-mega-card-title">Kulak Arkası</h3>
+                <p class="home-mega-card-desc">Güçlü işlem ve pil seçenekleri.</p>
+              </div>
+              </a>
+            </li>
+            <li>
+              <a class="home-mega-card" href="./urunler.html#sarjli">
+              <div class="home-mega-visual">
+                <!-- <img class="home-mega-img" src="./images/..." alt="Şarjlı işitme cihazları" /> -->
+              </div>
+              <div class="home-mega-card-body">
+                <h3 class="home-mega-card-title">Şarjlı Modeller</h3>
+                <p class="home-mega-card-desc">Pil değiştirmeden günlük kullanım.</p>
+              </div>
+              </a>
+            </li>
+            <li>
+              <a class="home-mega-card" href="./urunler.html#aksesuar">
+              <div class="home-mega-visual">
+                <!-- <img class="home-mega-img" src="./images/..." alt="İşitme cihazı aksesuarları" /> -->
+              </div>
+              <div class="home-mega-card-body">
+                <h3 class="home-mega-card-title">Aksesuar</h3>
+                <p class="home-mega-card-desc">Bağlantı, şarj ve konfor ürünleri.</p>
+              </div>
+              </a>
+            </li>
+          </ul>
+
+          <div class="home-mega-links card">
+            <p class="mega-title mt-0">Öne çıkanlar</p>
+            <ul class="home-mega-pills">
+              <li><a href="./urunler.html#bluetooth">Bluetooth bağlantı</a></li>
+              <li><a href="./urunler.html#gorunmez">Görünmez tasarım</a></li>
+              <li><a href="./urunler.html#konfor">Gün boyu konfor</a></li>
+              <li><a href="./urunler.html#destek">Takip ve destek</a></li>
+            </ul>
+            <p class="muted mb-0">
+              <a class="text-link" href="./urunler.html">Tüm ürünleri görüntüle</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-logo-row">
+        <img
+          class="footer-logo footer-logo-standalone"
+          src="./images/brand-logo.png"
+          width="140"
+          height="34"
+          alt="Cab As İşitme"
+          loading="lazy"
+        />
+      </div>
+      <div class="container footer-grid">
+        <section class="footer-col" aria-label="Kurumsal">
+          <h2 class="footer-title">Kurumsal</h2>
+          <p class="footer-text">
+            İşitme çözümlerinde güvenilir teknoloji ve uzman desteğiyle, hayatın seslerine yeniden kavuşmanızı hedefleriz.
+          </p>
+        </section>
+
+        <nav class="footer-col" aria-label="Site menü">
+          <h2 class="footer-title">Site Menü</h2>
+          <ul class="footer-list">
+            <li><a href="./index.html">Ana Sayfa</a></li>
+            <li><a href="./urunler.html">Ürünler</a></li>
+            <li><a href="./hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="./iletisim.html">İletişim</a></li>
+            <li><a href="./sss.html">Sıkça Sorulan Sorular</a></li>
+          </ul>
+        </nav>
+
+        <section class="footer-col" aria-label="İletişim">
+          <h2 class="footer-title">İletişim</h2>
+          <ul class="footer-list">
+            <li>Ziya Gökalp Caddesi, Metro Han No:24/56, Kızılay / Ankara</li>
+            <li><a href="tel:+903124340207">0 (312) 434 02 07</a></li>
+            <li><a href="mailto:cabases@gmail.com">cabases@gmail.com</a></li>
+            <li><a href="https://wa.me/905387137283" target="_blank" rel="noopener noreferrer">WhatsApp: 0538 713 72 83</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="container footer-bottom">
+        <p class="m-0">© <span data-year></span> ÇABASES İŞİTME CİHAZLARI Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+
+    <script src="./js/main.js" defer></script>
+  </body>
+</html>

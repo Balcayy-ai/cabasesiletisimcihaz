@@ -1,0 +1,30 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ürün görseli placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="240" y1="160" x2="960" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BFE6FF"/>
+      <stop offset="0.45" stop-color="#2AA8D8"/>
+      <stop offset="1" stop-color="#0B3B5A"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="900" fill="url(#bg)"/>
+  <rect x="90" y="90" width="1020" height="720" rx="56" fill="#FFFFFF" stroke="#E6EDF5" stroke-width="6"/>
+
+  <path d="M360 650c0-170 120-320 290-320 170 0 250 120 250 260 0 150-90 260-230 260-170 0-310-60-310-200Z" fill="url(#accent)" opacity="0.12"/>
+  <path d="M480 630c0-120 90-230 220-230 125 0 180 85 180 185 0 105-65 185-170 185-125 0-230-40-230-140Z" fill="url(#accent)" opacity="0.22"/>
+
+  <circle cx="400" cy="330" r="10" fill="#0E7490" opacity="0.35"/>
+  <circle cx="820" cy="290" r="12" fill="#0B3B5A" opacity="0.22"/>
+  <circle cx="880" cy="610" r="9" fill="#2AA8D8" opacity="0.30"/>
+
+  <text x="140" y="210" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="46" font-weight="800" fill="#0B3B5A">
+    Ürün Görseli
+  </text>
+  <text x="140" y="270" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="28" font-weight="600" fill="#5B677A">
+    (placeholder)
+  </text>
+</svg>
