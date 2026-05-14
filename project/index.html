@@ -83,6 +83,13 @@
     </script>
 
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="preload"
+      as="image"
+      type="image/webp"
+      href="./images/Gemini_Generated_Image_qox7viqox7viqox7.webp"
+      fetchpriority="high"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -371,16 +378,19 @@
           <div class="cab-carousel-track" data-carousel-track style="--cab-n: 3; --cab-i: 0">
             <article class="cab-carousel-slide cab-home-hero-slide is-active" data-carousel-slide aria-hidden="false">
             <div class="cab-home-hero-bg">
-              <img
-                class="cab-home-hero-img"
-                src="./images/Gemini_Generated_Image_qox7viqox7viqox7.png"
-                width="1920"
-                height="1080"
-                alt="Antrenör ve genç sporcular — takım ve iletişim"
-                decoding="async"
-                fetchpriority="high"
-                loading="eager"
-              />
+              <picture>
+                <source type="image/webp" srcset="./images/Gemini_Generated_Image_qox7viqox7viqox7.webp" />
+                <img
+                  class="cab-home-hero-img"
+                  src="./images/Gemini_Generated_Image_qox7viqox7viqox7.png"
+                  width="1920"
+                  height="1247"
+                  alt="Antrenör ve genç sporcular — takım ve iletişim"
+                  decoding="async"
+                  fetchpriority="high"
+                  loading="eager"
+                />
+              </picture>
               <div class="cab-home-hero-scrim" aria-hidden="true"></div>
             </div>
             <div class="cab-home-hero-content container">
@@ -392,15 +402,18 @@
           </article>
           <article class="cab-carousel-slide cab-home-hero-slide" data-carousel-slide aria-hidden="true">
             <div class="cab-home-hero-bg">
-              <img
-                class="cab-home-hero-img"
-                src="./images/95f42bbb-a7db-4bbe-abc4-e82a76667974.png"
-                width="1920"
-                height="1080"
-                alt="İşitme cihazını gösteren kadın — günlük yaşamda net duyma"
-                decoding="async"
-                loading="lazy"
-              />
+              <picture>
+                <source type="image/webp" srcset="./images/95f42bbb-a7db-4bbe-abc4-e82a76667974.webp" />
+                <img
+                  class="cab-home-hero-img"
+                  src="./images/95f42bbb-a7db-4bbe-abc4-e82a76667974.png"
+                  width="1920"
+                  height="800"
+                  alt="İşitme cihazını gösteren kadın — günlük yaşamda net duyma"
+                  decoding="async"
+                  loading="lazy"
+                />
+              </picture>
               <div class="cab-home-hero-scrim" aria-hidden="true"></div>
             </div>
             <div class="cab-home-hero-content container">
@@ -412,15 +425,21 @@
           </article>
           <article class="cab-carousel-slide cab-home-hero-slide" data-carousel-slide aria-hidden="true">
             <div class="cab-home-hero-bg">
-              <img
-                class="cab-home-hero-img"
-                src="./images/adamın_gömleğini_lacivert_ile_değiştirir_202605142214.jpeg"
-                width="1920"
-                height="1080"
-                alt="Mutlu ve kendinden emin bir erkek — pozitif yaşam"
-                decoding="async"
-                loading="lazy"
-              />
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="./images/adamın_gömleğini_lacivert_ile_değiştirir_202605142214.webp"
+                />
+                <img
+                  class="cab-home-hero-img"
+                  src="./images/adamın_gömleğini_lacivert_ile_değiştirir_202605142214.jpeg"
+                  width="1920"
+                  height="1072"
+                  alt="Mutlu ve kendinden emin bir erkek — pozitif yaşam"
+                  decoding="async"
+                  loading="lazy"
+                />
+              </picture>
               <div class="cab-home-hero-scrim" aria-hidden="true"></div>
             </div>
             <div class="cab-home-hero-content container">
