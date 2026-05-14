@@ -13,22 +13,74 @@
     <meta name="robots" content="index,follow" />
     <meta name="author" content="Cab As İşitme" />
 
-    <link rel="canonical" href="https://example.com/sss.html" />
+    <link rel="canonical" href="https://cabasesisitme.com/sss.html" />
 
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="tr_TR" />
     <meta property="og:title" content="Cab As İşitme | Sıkça Sorulan Sorular" />
     <meta property="og:description" content="İşitme cihazları hakkında sıkça sorulan sorular ve yanıtlar." />
-    <meta property="og:url" content="https://example.com/sss.html" />
-    <meta property="og:image" content="https://example.com/project/images/og-cover.svg" />
+    <meta property="og:url" content="https://cabasesisitme.com/sss.html" />
+    <meta property="og:image" content="https://cabasesisitme.com/images/og-cover.svg" />
 
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cab As İşitme | Sıkça Sorulan Sorular" />
+    <meta name="twitter:description" content="İşitme cihazları, SGK, bakım ve günlük kullanım hakkında sıkça sorulan sorular." />
+    <meta name="twitter:image" content="https://cabasesisitme.com/images/og-cover.svg" />
+    <meta property="og:site_name" content="Cab As İşitme" />
+    <link rel="alternate" hreflang="tr" href="https://cabasesisitme.com/sss.html" />
+    <link rel="alternate" hreflang="x-default" href="https://cabasesisitme.com/sss.html" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://cabasesisitme.com/#organization",
+            "name": "Cab As İşitme",
+            "url": "https://cabasesisitme.com/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://cabasesisitme.com/images/brand-logo.png"
+            },
+            "email": "cabasess@hotmail.com",
+            "telephone": "+903124340207"
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://cabasesisitme.com/sss.html#webpage",
+            "url": "https://cabasesisitme.com/sss.html",
+            "name": "Sıkça Sorulan Sorular | Cab As İşitme",
+            "isPartOf": {
+              "@id": "https://cabasesisitme.com/#website"
+            },
+            "inLanguage": "tr-TR"
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Ana Sayfa",
+                "item": "https://cabasesisitme.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "SSS",
+                "item": "https://cabasesisitme.com/sss.html"
+              }
+            ]
+          }
+        ]
+      }
+    </script>
 
     <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -48,14 +100,14 @@
             </svg>
             0 (312) 434 02 07
           </a>
-          <a class="topbar-link" href="mailto:cabases@gmail.com">
+          <a class="topbar-link" href="mailto:cabasess@hotmail.com">
             <svg class="topbar-icon" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 fill="currentColor"
                 d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"
               />
             </svg>
-            cabases@gmail.com
+            cabasess@hotmail.com
           </a>
         </div>
       </div>
@@ -123,46 +175,129 @@
                       Servis ve destek
                       <span class="mega-cat-arrow" aria-hidden="true">›</span>
                     </button>
-                    <button type="button" class="mega-cat" role="tab" aria-selected="false" data-mega-tab="blog" id="mega-tab-blog">
-                      Blog
-                      <span class="mega-cat-arrow" aria-hidden="true">›</span>
-                    </button>
                   </div>
                   <div class="mega-split-detail">
                     <div class="mega-panel" role="tabpanel" data-mega-content="isitme" aria-labelledby="mega-tab-isitme">
                       <p class="mega-panel-title">İşitme Cihazları</p>
                       <ul class="mega-panel-list">
                         <li><a href="./sss.html#isitme-cihaz-nasil">İşitme cihazları nasıl çalışır?</a></li>
-                        <li><a href="./urunler.html#kulak-ici">Kulak içi modeller</a></li>
-                        <li><a href="./urunler.html#kulak-arkasi">Kulak arkası modeller</a></li>
-                        <li><a href="./urunler.html#sarjli">Şarjlı modeller</a></li>
+                        <li><a href="./sss.html#modeller">İşitme cihazı türleri</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-isitme-modeller">Modeller</p>
+                      <ul class="mega-panel-list mega-panel-list--nest" aria-labelledby="mega-isitme-modeller">
+                        <li><a href="./urunler.html#signia-insio-ix">Insio IX</a></li>
+                        <li class="mega-fly" data-mega-fly>
+                          <button type="button" class="mega-fly-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="mega-fly-styletto-panel" id="mega-fly-styletto-btn">
+                            Styletto
+                            <span class="mega-fly-chev" aria-hidden="true">›</span>
+                          </button>
+                          <div class="mega-fly-panel" id="mega-fly-styletto-panel" role="group" aria-labelledby="mega-fly-styletto-btn">
+                            <p class="mega-fly-heading">Styletto modelleri</p>
+                            <ul class="mega-panel-list mega-fly-list">
+                              <li><a href="./urunler.html#signia-styletto-ix">Styletto IX</a></li>
+                              <li><a href="./urunler.html#signia-styletto-ax">Styletto AX</a></li>
+                              <li><a href="./urunler.html#signia-styletto-x">Styletto X</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="./urunler.html#signia-active-ix">Active IX</a></li>
+                        <li><a href="./urunler.html#signia-silk-charge-go-ix">Silk Charge&amp;Go IX</a></li>
+                        <li><a href="./urunler.html#signia-silk-x">Silk X</a></li>
+                        <li class="mega-fly" data-mega-fly>
+                          <button type="button" class="mega-fly-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="mega-fly-pure-panel" id="mega-fly-pure-btn">
+                            Pure
+                            <span class="mega-fly-chev" aria-hidden="true">›</span>
+                          </button>
+                          <div class="mega-fly-panel" id="mega-fly-pure-panel" role="group" aria-labelledby="mega-fly-pure-btn">
+                            <p class="mega-fly-heading">Pure modelleri</p>
+                            <ul class="mega-panel-list mega-fly-list">
+                              <li><a href="./urunler.html#signia-pure-charge-go-ix">Pure Charge&amp;Go IX</a></li>
+                              <li><a href="./urunler.html#signia-pure-charge-go-ax">Pure Charge&amp;Go AX</a></li>
+                              <li><a href="./urunler.html#signia-pure-charge-go-x">Pure Charge&amp;Go X</a></li>
+                              <li><a href="./urunler.html#signia-pure-312-ax">Pure 312 AX</a></li>
+                              <li><a href="./urunler.html#signia-pure-312-x">Pure 312 X</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="./urunler.html#signia-motion-x">Motion X</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-isitme-diger">Diğer işitme cihazları</p>
+                      <ul class="mega-panel-list mega-panel-list--nest" aria-labelledby="mega-isitme-diger">
+                        <li class="mega-fly" data-mega-fly>
+                          <button type="button" class="mega-fly-trigger" aria-expanded="false" aria-haspopup="true" aria-controls="mega-fly-cros-panel" id="mega-fly-cros-btn">
+                            Cros
+                            <span class="mega-fly-chev" aria-hidden="true">›</span>
+                          </button>
+                          <div class="mega-fly-panel" id="mega-fly-cros-panel" role="group" aria-labelledby="mega-fly-cros-btn">
+                            <p class="mega-fly-heading">Cros modelleri</p>
+                            <ul class="mega-panel-list mega-fly-list">
+                              <li><a href="./urunler.html#signia-cros-ix">Cros IX</a></li>
+                              <li><a href="./urunler.html#signia-cros-ax">Cros AX</a></li>
+                              <li><a href="./urunler.html#signia-cros-x">Cros X</a></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li><a href="./urunler.html#signia-intuis-4">Intuis 4</a></li>
+                      </ul>
+                      <ul class="mega-panel-list">
                         <li><a href="./urunler.html">Tüm ürünleri görüntüle</a></li>
                       </ul>
                     </div>
                     <div class="mega-panel" hidden role="tabpanel" data-mega-content="baglanti" aria-labelledby="mega-tab-baglanti">
                       <p class="mega-panel-title">Bağlantı</p>
+                      <p class="mega-panel-sub" id="mega-baglanti-ses">Ses aktarımı</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-baglanti-ses">
+                        <li><a href="./urunler.html#signia-tv-sound">TV Sound</a></li>
+                        <li><a href="./urunler.html#signia-streamline-mic">StreamLine Mic</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-baglanti-uygulama">Uygulama</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-baglanti-uygulama">
+                        <li><a href="./urunler.html#signia-app">Signia App</a></li>
+                        <li><a href="./urunler.html#signia-assistant">Signia Assistant</a></li>
+                        <li><a href="./sss.html#bluetooth">Bluetooth (SSS)</a></li>
+                      </ul>
                       <ul class="mega-panel-list">
-                        <li><a href="./urunler.html#bluetooth">Bluetooth ve kablosuz bağlantı</a></li>
-                        <li><a href="./sss.html#bluetooth">Bluetooth bağlantısı (SSS)</a></li>
                         <li><a href="./urunler.html#destek">Uygulama ve uzaktan destek</a></li>
-                        <li><a href="./iletisim.html">Bağlantı danışmanlığı için iletişim</a></li>
+                        <li><a href="./iletisim.html">Bağlantı danışmanlığı · iletişim</a></li>
                       </ul>
                     </div>
                     <div class="mega-panel" hidden role="tabpanel" data-mega-content="sarj" aria-labelledby="mega-tab-sarj">
                       <p class="mega-panel-title">Şarj cihazları ve Aksesuarlar</p>
-                      <ul class="mega-panel-list">
-                        <li><a href="./urunler.html#sarjli">Şarj çözümleri</a></li>
-                        <li><a href="./urunler.html#aksesuar">Aksesuarlar</a></li>
-                        <li><a href="./urunler.html#aksesuar">TV ve multimedya aksesuarları</a></li>
+                      <p class="mega-panel-sub" id="mega-sarj-uzaktan">Uzaktan kumanda</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-sarj-uzaktan">
+                        <li><a href="./urunler.html#signia-minipocket">miniPocket</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-sarj-tasinir">Taşınabilir şarj üniteleri</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-sarj-tasinir">
+                        <li><a href="./urunler.html#acc-styletto-tasinir-sarj">Styletto taşınabilir şarj</a></li>
+                        <li><a href="./urunler.html#signia-pure-portable-charger">Pure portable şarj</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-sarj-aksesuar">Şarj aksesuarları</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-sarj-aksesuar">
+                        <li><a href="./urunler.html#acc-enduktif-sarj-ii">Endüktif Şarj II</a></li>
+                        <li><a href="./urunler.html#acc-standart-sarj">Standart şarj cihazı</a></li>
+                        <li><a href="./urunler.html#acc-dry-clean-sarj">Dry&amp;Clean şarj cihazı</a></li>
+                        <li><a href="./urunler.html#acc-active-charger">Signia Active Charger</a></li>
+                        <li><a href="./urunler.html#acc-styletto-x-charger">Styletto X Charger</a></li>
+                        <li><a href="./urunler.html#acc-motion-charger">Motion Charger</a></li>
+                        <li><a href="./urunler.html#acc-pure-charger">Pure Charger</a></li>
+                        <li><a href="./urunler.html#acc-motion-dry-clean">Motion Dry&amp;Clean</a></li>
+                        <li><a href="./urunler.html#acc-pure-dry-clean">Pure Dry&amp;Clean</a></li>
+                      </ul>
+                      <p class="mega-panel-sub" id="mega-sarj-diger">Diğer</p>
+                      <ul class="mega-panel-list" aria-labelledby="mega-sarj-diger">
+                        <li><a href="./urunler.html#signia-piller">Signia işitme cihazı pilleri</a></li>
+                        <li><a href="./urunler.html#signia-earwear-3">EarWear 3.0</a></li>
                       </ul>
                     </div>
                     <div class="mega-panel" hidden role="tabpanel" data-mega-content="isitme-hakkinda" aria-labelledby="mega-tab-isitme-hakkinda">
                       <p class="mega-panel-title">İşitme hakkında</p>
                       <ul class="mega-panel-list">
-                        <li><a href="./sss.html#ilk-kez">İlk kez kullananlar için SSS</a></li>
-                        <li><a href="./sss.html#isitme-turu-derece">İşitme kaybı türü ve derecesi</a></li>
-                        <li><a href="./sss.html#modeller">Hangi modeller mevcut?</a></li>
-                        <li><a href="./sss.html#gurultu-ortam">Gürültülü ortamlarda dinleme</a></li>
+                        <li><a href="./sss.html#ilk-kez">SSS sayfasına giriş</a></li>
+                        <li><a href="./sss.html#isitme-cihaz-nasil">İşitme cihazları nasıl çalışır?</a></li>
+                        <li><a href="./sss.html#hangi-durumlarda-kullanim">Ne zaman işitme cihazı?</a></li>
+                        <li><a href="./sss.html#devlet-karsiliyor-mu">SGK ve devlet desteği</a></li>
+                        <li><a href="./sss.html#modeller">Model ve form seçenekleri</a></li>
                       </ul>
                     </div>
                     <div class="mega-panel" hidden role="tabpanel" data-mega-content="tinnitus" aria-labelledby="mega-tab-tinnitus">
@@ -186,12 +321,6 @@
                         <li><a href="./iletisim.html">İletişim ve randevu</a></li>
                         <li><a href="./hakkimizda.html">Hakkımızda</a></li>
                         <li><a href="./sss.html">Sıkça sorulan sorular</a></li>
-                      </ul>
-                    </div>
-                    <div class="mega-panel" hidden role="tabpanel" data-mega-content="blog" aria-labelledby="mega-tab-blog">
-                      <p class="mega-panel-title">Blog</p>
-                      <ul class="mega-panel-list">
-                        <li><a href="./sss.html#blog-yakinda">Yakında: blog yazıları</a></li>
                       </ul>
                     </div>
                   </div>
@@ -228,20 +357,21 @@
       </div>
     </header>
 
-    <main id="main">
-      <section class="content content-faq">
+    <main id="main" class="site-motion">
+      <section class="content content-faq content-faq--premium">
         <div class="container-faq">
-          <header class="faq-page-intro" id="ilk-kez">
-            <h2 class="faq-intro-title">İlk kez işitme cihazı kullananlar için sık sorulan sorular</h2>
+          <header class="faq-page-intro faq-page-intro--premium" id="ilk-kez">
+            <p class="faq-intro-kicker">Cab As İşitme · bilgilendirme</p>
+            <h1 class="faq-intro-title">Sıkça sorulan sorular</h1>
             <p class="faq-intro-lead">
-              İşitme cihazlarında yeniyseniz, muhtemelen birçok sorunuz vardır — bu SSS sayfası, işitme yolculuğunuza
-              başlarken kendinizi güvende ve bilgili hissetmenize yardımcı olmak için burada. İçerik, işitme sağlığı
-              alanında yaygın bilgilere dayanmaktadır; kişisel durumunuz için mutlaka
-              <a href="./iletisim.html">işitme uzmanınızla</a> görüşün.
+              İşitme cihazları, SGK süreçleri ve günlük kullanım hakkında merak edilenleri sade bir dille derledik.
+              Kişisel tanı, reçete ve hukuki durumunuz için mutlaka
+              <a href="./iletisim.html">uzmanınız veya merkezimiz</a> ile görüşün.
             </p>
           </header>
 
-          <div class="faq-accordion" data-faq>
+          <div class="faq-accordion faq-accordion--premium" data-faq>
+
             <div class="faq-acc-item" id="isitme-cihaz-nasil">
               <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-isitme-cihaz-nasil" id="faq-tr-isitme-cihaz-nasil">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
@@ -251,9 +381,55 @@
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
                     <p>
-                      İşitme cihazları çevredeki sesleri mikrofonla alır, dijital olarak işler, kişiye özel ayarlara göre
-                      güçlendirir ve kulağa iletir. Modern cihazlar gürültü yönetimi, konuşmayı öne çıkarma ve farklı
-                      dinleme programları sunar.
+                      İşitme cihazları dış ortamdan gelen sesleri mikrofon aracılığıyla toplar, bu sesleri güçlendirir ve kulağa daha anlaşılır şekilde iletir. Böylece kişi konuşmaları ve çevre seslerini daha net duyabilir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="isitme-cihazi-nedir">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-isitme-cihazi-nedir" id="faq-tr-isitme-cihazi-nedir">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazı nedir, ne işe yarar?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-isitme-cihazi-nedir" role="region" aria-labelledby="faq-tr-isitme-cihazi-nedir">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme cihazı, işitme kaybı yaşayan kişilerin sesleri daha iyi duymasını sağlayan elektronik bir cihazdır. Konuşmaları daha net anlamaya yardımcı olur ve kişinin günlük yaşam kalitesini artırır.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="neden-kullanmaliyim">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-neden-kullanmaliyim" id="faq-tr-neden-kullanmaliyim">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazını neden kullanmalıyım?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-neden-kullanmaliyim" role="region" aria-labelledby="faq-tr-neden-kullanmaliyim">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme kaybı zamanla iletişim sorunlarına, sosyal hayattan uzaklaşmaya ve yaşam kalitesinin düşmesine neden olabilir. İşitme cihazı kullanımı konuşmaları daha rahat anlamanızı, çevrenizle daha iyi iletişim kurmanızı ve günlük yaşamda daha konforlu hissetmenizi sağlar.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="hangi-durumlarda-kullanim">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-hangi-durumlarda" id="faq-tr-hangi-durumlarda">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazı hangi durumlarda kullanılmalıdır?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-hangi-durumlarda" role="region" aria-labelledby="faq-tr-hangi-durumlarda">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme kaybı tespit edildiğinde ve doktor veya odyolog tarafından gerekli görüldüğünde işitme cihazı kullanılmalıdır. Özellikle konuşmaları anlamada zorlanma, televizyon sesini fazla açma veya kalabalık ortamlarda duymada güçlük yaşanıyorsa işitme cihazı önerilebilir.
                     </p>
                   </div>
                 </div>
@@ -268,16 +444,42 @@
               <div class="faq-acc-panel" id="faq-panel-isitme-turu" role="region" aria-labelledby="faq-tr-isitme-turu">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p><strong>1. Lisanslı bir odyolog veya işitme uzmanından randevu alın.</strong> Bazı KBB hekimleri de işitme testleri yapmaktadır.</p>
-                    <p><strong>2. Kapsamlı bir işitme değerlendirmesine girin.</strong> Bu genellikle şunları içerir:</p>
-                    <ul>
-                      <li><strong>Saf ses odyometrisi:</strong> Farklı frekans ve şiddetlerdeki seslerle en hafif duyabildiğiniz eşikler ölçülür.</li>
-                      <li><strong>Konuşma testi:</strong> Kelimeleri ne kadar iyi duyup anladığınız değerlendirilir.</li>
-                      <li><strong>Timpanometri:</strong> Kulak zarı hareketi ve kulak yolu durumu incelenir.</li>
-                      <li><strong>Kemik iletim testi:</strong> Kaybın iletim tipi mi yoksa sensörinöral mı olduğu hakkında bilgi verir.</li>
-                    </ul>
-                    <p><strong>3. Odyogram sonuçlarını uzmanınızla birlikte inceleyin.</strong> İşitme kaybının derecesi (hafif, orta, ileri vb.) ve türü bu tabloda özetlenir.</p>
-                    <p>Randevu için <a href="./iletisim.html">iletişim sayfamızdan</a> bize ulaşabilirsiniz.</p>
+                    <p><strong>1.</strong> Lisanslı bir odyolog veya işitme uzmanından randevu alın. Bazı KBB hekimleri de işitme testleri yapmaktadır.</p>
+                    <p><strong>2.</strong> Kapsamlı değerlendirme genelde saf ses testi, konuşma testi, timpanometri ve gerektiğinde kemik iletim testlerini içerir.</p>
+                    <p><strong>3.</strong> Odyogram ile kaybın derecesi ve türü özetlenir; size uygun cihaz planı buna göre yapılır.</p>
+                    <p>Randevu için <a href="./iletisim.html">iletişim</a> sayfamızdan bize ulaşabilirsiniz.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="alirken-dikkat">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-alirken-dikkat" id="faq-tr-alirken-dikkat">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazı alırken nelere dikkat etmeliyim?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-alirken-dikkat" role="region" aria-labelledby="faq-tr-alirken-dikkat">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme cihazı satın alırken öncelikle işitme kaybının derecesi ve tipi doğru belirlenmelidir. Cihazın kişinin kulak yapısına uygun, kullanımının kolay ve günlük yaşamda rahat kullanılabilir olması önemlidir. Ayrıca cihazın ruhsatlı ve güvenilir bir işitme merkezinden alınmasına dikkat edilmelidir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="en-iyi-marka">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-en-iyi-marka" id="faq-tr-en-iyi-marka">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>En iyi işitme cihazı markası nedir?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-en-iyi-marka" role="region" aria-labelledby="faq-tr-en-iyi-marka">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      En iyi işitme cihazı kişiden kişiye değişir. Çünkü her bireyin işitme kaybı seviyesi, kulak yapısı ve ihtiyaçları farklıdır. Bu nedenle başkası için uygun olan bir cihaz sizin için aynı sonucu vermeyebilir. Doğru cihaz seçimi uzman değerlendirmesi ile yapılmalıdır.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -291,112 +493,136 @@
               <div class="faq-acc-panel" id="faq-panel-modeller" role="region" aria-labelledby="faq-tr-modeller">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>
-                      Farklı ihtiyaç, tercih ve işitme kaybı derecelerine uygun çeşitli <strong>form faktörleri</strong> bulunur.
-                      Hangisinin size uygun olduğunu işitme uzmanınızla belirlemek en doğru yaklaşımdır.
-                    </p>
-                    <h3>BTE (Kulak arkası)</h3>
-                    <p>Cihaz kulak arkasına oturur; ses çoğunlukla kulak kanalına tüp veya ince kablo ile iletilir. Geniş işitme kaybı aralığına uygundur.</p>
-                    <h3>RIC / RITE (Kanal içi alıcı)</h3>
-                    <p>Alıcı kulak kanalına yakın konumlanır; genelde daha küçük ve daha az fark edilir bir görünüm sunar.</p>
-                    <h3>Anında uyum / hazır takılabilir modeller</h3>
-                    <p>Özel kalıp gerektirmeden silikon uçlarla takılabilen seçenekler vardır; hafif–orta düzey kayıplarda sık tercih edilir.</p>
-                    <h3>Kulak içi özel üretim (ITE, ITC, CIC, IIC)</h3>
-                    <p>Kulak izlenimine göre üretilir; boyut ve görünürlük modele göre değişir. Uzmanınız kulağınıza ve işitme profilinize uygun formu önerir.</p>
-                    <p>Modellerimizi görmek için <a href="./urunler.html">ürünler</a> sayfamıza göz atabilirsiniz.</p>
+                    <p>Kulak arkası (BTE), kanal içi alıcılı (RIC/RITE), hazır takılabilir ve kulak içi özel üretim (ITE, ITC, CIC, IIC) gibi form seçenekleri vardır. Hangisinin uygun olduğu işitme kaybınıza ve yaşam tarzınıza göre uzmanınızla belirlenir.</p>
+                    <p>Örnek ürün grupları için <a href="./urunler.html">ürünler</a> sayfamıza bakabilirsiniz.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="fiyat">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-fiyat" id="faq-tr-fiyat">
+            <div class="faq-acc-item" id="devlet-karsiliyor-mu">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-devlet" id="faq-tr-devlet">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Bir işitme cihazının fiyatı ne kadardır?</span>
+                <span>İşitme cihazını devlet karşılıyor mu?</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-fiyat" role="region" aria-labelledby="faq-tr-fiyat">
+              <div class="faq-acc-panel" id="faq-panel-devlet" role="region" aria-labelledby="faq-tr-devlet">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
                     <p>
-                      Fiyat; cihaz modeli ve performans düzeyi, form faktörü, satın alıma dahil hizmetler (uyarlama,
-                      takip, garanti kapsamı) ve sigorta / ödeme seçeneklerine göre değişir. Net maliyet ve paket
-                      detayları için <a href="./iletisim.html">işitme uzmanımızla</a> görüşmeniz en doğru adımdır.
+                      SGK, belirli şartların sağlanması durumunda işitme cihazı için destek ödemesi yapmaktadır. Destek miktarı kişinin çalışma durumuna göre değişebilir. Güncel destek tutarları ve gerekli evraklar için işitme merkezlerinden bilgi alınabilir.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="deneme-iade">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-deneme" id="faq-tr-deneme">
+            <div class="faq-acc-item" id="almaya-hak">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-almaya-hak" id="faq-tr-almaya-hak">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Satın almadan önce deneme şansım var mı, memnun kalmazsam ne olur?</span>
+                <span>İşitme cihazı almaya hakkım var mı?</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-deneme" role="region" aria-labelledby="faq-tr-deneme">
+              <div class="faq-acc-panel" id="faq-panel-almaya-hak" role="region" aria-labelledby="faq-tr-almaya-hak">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
                     <p>
-                      Çoğu merkez yeni işitme cihazları için bir <strong>deneme süresi</strong> sunar. Bu süre içinde
-                      memnun kalmazsanız iade koşulları işitme merkezinin politikasına göre şekillenir.
-                    </p>
-                    <p>
-                      Deneme süresinde uzmanınız geri bildirimlerinize göre hem yazılım ayarlarını hem de fiziksel oturuşu
-                      güncelleyebilir; bu nedenle cihazı günlük hayatta düzenli kullanmanız önemlidir.
-                    </p>
-                    <p>
-                      <strong>Denemeye başlamadan önce</strong> sürenin uzunluğu, iade koşulları, olası kesintiler ve
-                      dahil hizmetler hakkında mutlaka yazılı/sözlü bilgi isteyin.
+                      SGK, uygun şartları sağlayan kişilere 5 yılda bir işitme cihazı desteği vermektedir. Daha önce cihaz aldıysanız süre kontrolü yapılarak yeniden destek hakkınız olup olmadığı öğrenilebilir.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="takip-randevu">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-takip" id="faq-tr-takip">
+            <div class="faq-acc-item" id="sgk-rapor">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-sgk-rapor" id="faq-tr-sgk-rapor">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>İşitme cihazımın ayarlarını optimize etmek için takip randevularına ihtiyaç duyacak mıyım?</span>
+                <span>Sosyal Güvenlik Kurumu katkısı için herhangi bir hastaneden alınacak rapor yeterli mi?</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-takip" role="region" aria-labelledby="faq-tr-takip">
+              <div class="faq-acc-panel" id="faq-panel-sgk-rapor" role="region" aria-labelledby="faq-tr-sgk-rapor">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>Evet. İlk uygulama (fitting) sonrası takip randevuları çok önemlidir. Beyin yeni duyulan seslere alışırken bazı sesler fazla keskin veya boğuk gelebilir; uzmanınız gerçek yaşam deneyiminize göre ince ayar yapar.</p>
-                    <p>Sık sık kendi başınıza yaptığınız ayar değişikliklerini uzmanınızla paylaşmanız programlamanın netleşmesine yardımcı olur. İşitme durumu zamanla değişebileceği için düzenli kontroller önerilir; genelde ilk haftalarda birkaç takip, sonrasında 6–12 ayda bir kontrol planlanabilir (merkezinize göre değişir).</p>
+                    <p>
+                      SGK desteğinden yararlanabilmek için raporun devlet hastaneleri, üniversite hastaneleri veya SGK&apos;nın kabul ettiği sağlık kuruluşlarından alınması gerekmektedir. Raporun güncel ve uygun içerikte olması önemlidir.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="alism-suresi">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-alism" id="faq-tr-alism">
+            <div class="faq-acc-item" id="pilli-sarjli">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-pilli-sarjli" id="faq-tr-pilli-sarjli">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Bir işitme cihazına alışmak ne kadar sürer?</span>
+                <span>İşitme cihazını pilli mi şarjlı mı almalıyım?</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-alism" role="region" aria-labelledby="faq-tr-alism">
+              <div class="faq-acc-panel" id="faq-panel-pilli-sarjli" role="region" aria-labelledby="faq-tr-pilli-sarjli">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>Alışma süresi kişiye göre değişir. Tipik öneriler:</p>
-                    <h3>1. hafta</h3>
-                    <p>Sessiz ortamda günde 1–2 saatle başlayın; tanıdık seslere odaklanın. Süreyi kademeli artırın. Bazı seslerin garip gelmesi normaldir.</p>
-                    <h3>2. hafta</h3>
-                    <p>Günde 4–6 saat ve daha gürültülü ortamlarda deneyin; rahatsızlık notlarınızı uzmanınıza iletin.</p>
-                    <h3>3.–4. hafta</h3>
-                    <p>Mümkünse günün büyük bölümünde takın; telefon ve kalabalık ortamlarda deneyim kazanın.</p>
-                    <p>Uzun vadede düzenli kullanım, temizlik ve periyodik kontroller en iyi sonucu destekler.</p>
+                    <p>
+                      Şarjlı işitme cihazları kullanım kolaylığı ve uzun ömürlü bataryaları sayesinde günümüzde daha çok tercih edilmektedir. Pil değiştirme zahmetini azaltır ve günlük kullanımda pratiklik sağlar. Ancak kullanım alışkanlığına göre pilli modeller de tercih edilebilir.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="kendi-ses">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-kendi-ses" id="faq-tr-kendi-ses">
+            <div class="faq-acc-item" id="kullanirken-dikkat">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-kullanirken-dikkat" id="faq-tr-kullanirken-dikkat">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Kendi sesim ne kadar doğal olacak?</span>
+                <span>İşitme cihazını kullanırken dikkat edilmesi gerekenler nelerdir?</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-kendi-ses" role="region" aria-labelledby="faq-tr-kendi-ses">
+              <div class="faq-acc-panel" id="faq-panel-kullanirken-dikkat" role="region" aria-labelledby="faq-tr-kullanirken-dikkat">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>Yeni cihazda kendi sesinizin yapay veya çok yükselmiş gelmesi yaygındır. Birçok modern cihazda kendi sesinizi diğer seslerden ayrı işleyen algoritmalar bulunur; buna rağmen rahatsızlık sürerse uyarlama randevusunda ince ayar isteyin.</p>
+                    <p>
+                      İşitme cihazları hassas elektronik cihazlardır. Su, nem, darbe ve aşırı sıcak ortamlardan korunmalıdır. Düzenli bakım yapılmalı, cihaz temiz tutulmalı ve yetkili servis dışında müdahale edilmemelidir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="pil-nereden">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-pil-nereden" id="faq-tr-pil-nereden">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazının pilini nereden temin edebilirim?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-pil-nereden" role="region" aria-labelledby="faq-tr-pil-nereden">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme cihazı pilleri işitme merkezlerinden, medikal mağazalardan, eczanelerden ve güvenilir internet sitelerinden temin edilebilir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="bakim-sikligi">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-bakim-sikligi" id="faq-tr-bakim-sikligi">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazının bakımını ne sıklıkla yapmalıyım?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-bakim-sikligi" role="region" aria-labelledby="faq-tr-bakim-sikligi">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      İşitme cihazının günlük temizliği düzenli yapılmalıdır. Ayrıca cihazın performansını korumak için belirli aralıklarla uzman kontrolü ve profesyonel bakım önerilir.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-acc-item" id="abdest">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-abdest" id="faq-tr-abdest">
+                <span class="faq-acc-chev" aria-hidden="true"></span>
+                <span>İşitme cihazı kullanırken abdest nasıl alınır?</span>
+              </button>
+              <div class="faq-acc-panel" id="faq-panel-abdest" role="region" aria-labelledby="faq-tr-abdest">
+                <div class="faq-acc-inner">
+                  <div class="faq-acc-body">
+                    <p>
+                      Abdest almadan önce işitme cihazının çıkarılması önerilir. Çünkü cihazın suyla temas etmesi elektronik aksama zarar verebilir. Abdest sonrasında kulak ve çevresi tamamen kurutulduktan sonra cihaz tekrar takılmalıdır.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -405,12 +631,12 @@
             <div class="faq-acc-item" id="gurultu-ortam">
               <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-gurultu" id="faq-tr-gurultu">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Gürültülü ortamlarda yeni bir işitme cihazı yardımcı olur mu?</span>
+                <span>Gürültülü ortamlarda işitme cihazı yardımcı olur mu?</span>
               </button>
               <div class="faq-acc-panel" id="faq-panel-gurultu" role="region" aria-labelledby="faq-tr-gurultu">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>İşitme cihazları “kulaklık gibi her şeyi kesmez”; sağlıklı dinleme genelde konuşmanın anlaşılması ile çevresel farkındalığın dengelenmesini içerir. Üst segment cihazlarda gelişmiş ses işleme ve çok konuşmacılı ortamlarda konuşmayı güçlendiren özellikler gürültülü ortam performansını artırır.</p>
+                    <p>Modern cihazlar konuşmayı öne çıkaran ve gürültüyü dengeleyen algoritmalar sunar; doğru uyarlama ve model seçimiyle kalabalık ortamlarda anlaşılırlık artırılabilir.</p>
                   </div>
                 </div>
               </div>
@@ -424,49 +650,21 @@
               <div class="faq-acc-panel" id="faq-panel-bluetooth" role="region" aria-labelledby="faq-tr-bluetooth">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>Evet, birçok model Bluetooth veya türev protokollerle telefon ve diğer cihazlara bağlanabilir. Android (ör. ASHA), Apple (MFi) veya LE Audio uyumluluğu modele göre değişir. Yaşam tarzınıza uygun bağlantı seçenekleri için model seçiminde uzmanınıza danışın.</p>
+                    <p>Birçok model telefon ve aksesuarlarla kablosuz bağlantı sunar; uyumluluk modele göre değişir. Detay için <a href="./urunler.html#signia-app">ürünler — uygulama ve bağlantı</a> bölümüne veya merkezimize danışın.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="faq-acc-item" id="ip-korumasi">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-ip" id="faq-tr-ip">
+            <div class="faq-acc-item" id="alism-suresi">
+              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-alism" id="faq-tr-alism">
                 <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>İşitme cihazları suya veya tere dayanıklı mı?</span>
+                <span>Cihaza alışma ve günlük kullanım</span>
               </button>
-              <div class="faq-acc-panel" id="faq-panel-ip" role="region" aria-labelledby="faq-tr-ip">
+              <div class="faq-acc-panel" id="faq-panel-alism" role="region" aria-labelledby="faq-tr-alism">
                 <div class="faq-acc-inner">
                   <div class="faq-acc-body">
-                    <p>Çoğu modern cihaz nem ve toza karşı koruma sınıflarına (ör. IP68) sahip olabilir; yine de yüzme veya duşta kullanım genelde önerilmez. Kullanım kılavuzuna ve uzmanınızın uyarılarına uyun.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="faq-acc-item" id="kullanim-omru">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-omur" id="faq-tr-omur">
-                <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>Bir işitme cihazının ortalama kullanım ömrü nedir?</span>
-              </button>
-              <div class="faq-acc-panel" id="faq-panel-omur" role="region" aria-labelledby="faq-tr-omur">
-                <div class="faq-acc-inner">
-                  <div class="faq-acc-body">
-                    <p>Ortalama ömür genelde yaklaşık 3–7 yıl aralığında düşünülür; bakım alışkanlıkları, nem/ter/toz, günlük kullanım ve işitme ihtiyacınızdaki değişimler bu süreyi etkiler.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="faq-acc-item" id="temizlik">
-              <button type="button" class="faq-acc-trigger" aria-expanded="false" aria-controls="faq-panel-temizlik" id="faq-tr-temizlik">
-                <span class="faq-acc-chev" aria-hidden="true"></span>
-                <span>İşitme cihazlarının ne sıklıkla temizlenmesi gerekir?</span>
-              </button>
-              <div class="faq-acc-panel" id="faq-panel-temizlik" role="region" aria-labelledby="faq-tr-temizlik">
-                <div class="faq-acc-inner">
-                  <div class="faq-acc-body">
-                    <p>Günlük olarak yumuşak kuru bezle silin; mikrofon girişleri, kulak ucu ve şarj temaslarında kulak kiri birikimini kontrol edin. Wax guard değişim sıklığı kişiye göre değişir. Periyodik profesyonel temizlik ve performans kontrolü için düzenli randevu planlayın.</p>
+                    <p>İlk günlerde kısa sürelerle başlayıp süreyi kademeli artırmak, not tutmak ve takip randevularına gitmek alışmayı kolaylaştırır.</p>
                   </div>
                 </div>
               </div>
@@ -513,6 +711,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
@@ -551,9 +750,9 @@
         <section class="footer-col" aria-label="İletişim">
           <h2 class="footer-title">İletişim</h2>
           <ul class="footer-list">
-            <li>Ziya Gökalp Caddesi, Metro Han No:24/56, Kızılay / Ankara</li>
+            <li>ÇABASES İŞİTME CİHAZLARI<br />Kızılay, Ziya Gökalp Cd. Metro İş Hanı No:24 D:56<br />06420 Çankaya / Ankara</li>
             <li><a href="tel:+903124340207">0 (312) 434 02 07</a></li>
-            <li><a href="mailto:cabases@gmail.com">cabases@gmail.com</a></li>
+            <li><a href="mailto:cabasess@hotmail.com">cabasess@hotmail.com</a></li>
             <li><a href="https://wa.me/905387137283" target="_blank" rel="noopener noreferrer">WhatsApp: 0538 713 72 83</a></li>
           </ul>
         </section>
@@ -563,6 +762,10 @@
         <p class="m-0">© <span data-year></span> ÇABASES İŞİTME CİHAZLARI Tüm hakları saklıdır.</p>
       </div>
     </footer>
+
+    <a class="randevu-fab" href="./iletisim.html#randevu-whatsapp" aria-label="RANDEVU AL — WhatsApp iletişim formuna git">
+      <span class="randevu-fab-label">RANDEVU AL</span>
+    </a>
 
     <script src="./js/main.js" defer></script>
   </body>
