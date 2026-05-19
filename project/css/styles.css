@@ -158,7 +158,7 @@ body.has-nav-open {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 1.1rem; /* logo ↔ nav-list arası (+10%) */
   height: 78px; /* navbar yüksekliği sabit */
   padding: 0; /* yüksekliği padding yerine height yönetiyor */
   position: relative;
@@ -182,8 +182,16 @@ body.has-nav-open {
   height: auto;
   max-height: 100%;
   width: auto;
-  transform: scale(1.78);
+  max-width: min(13.5rem, 46vw);
+  transform: scale(1.97);
   transform-origin: left center;
+}
+
+@media (max-width: 1100px) {
+  .brand-logo {
+    transform: scale(1.9);
+    max-width: min(12rem, 44vw);
+  }
 }
 
 .nav-toggle {
@@ -1267,22 +1275,28 @@ body.has-nav-open {
   object-fit: contain;
 }
 
-/* Vitrin kartı (Signia tarzı): beyaz görsel alanı, kısa özet, alt çizgi + İncele */
-.product-grid--single {
-  grid-template-columns: minmax(0, 22rem);
-}
-
-.product-grid--showcase-pair {
-  grid-template-columns: repeat(2, minmax(0, 22rem));
-  max-width: 46rem;
+/* Vitrin grid: BTE ile aynı sütun genişliği tüm katalog bölümlerinde */
+.content--products-catalog .product-grid,
+.content--products-catalog .product-grid--showcase-pair,
+.content--products-catalog .product-grid--single {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: none;
   align-items: stretch;
 }
 
+@media (max-width: 1100px) {
+  .content--products-catalog .product-grid,
+  .content--products-catalog .product-grid--showcase-pair,
+  .content--products-catalog .product-grid--single {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 720px) {
-  .product-grid--single,
-  .product-grid--showcase-pair {
+  .content--products-catalog .product-grid,
+  .content--products-catalog .product-grid--showcase-pair,
+  .content--products-catalog .product-grid--single {
     grid-template-columns: minmax(0, 1fr);
-    max-width: none;
   }
 }
 
@@ -1307,21 +1321,18 @@ body.has-nav-open {
   flex-shrink: 0;
 }
 
-.product-card--showcase .product-media--photo .product-image {
+.product-card--showcase .product-media--photo .product-image,
+.product-card--showcase .product-media--photo-wide .product-image,
+.product-card--showcase .product-image--landscape {
   display: block;
   width: 100%;
   height: 13.5rem;
+  max-height: 13.5rem;
   margin: 0;
   object-fit: contain;
   object-position: center;
   transform: scale(1.08);
   transform-origin: center center;
-}
-
-.product-card--showcase .product-media--photo-wide .product-image,
-.product-card--showcase .product-image--landscape {
-  height: 13.5rem;
-  transform: none;
 }
 
 .product-detail-media.is-photo-landscape .product-detail-image {
@@ -1658,6 +1669,139 @@ body.has-nav-open {
   width: 100%;
   height: clamp(220px, 32vw, 320px);
   object-fit: cover;
+}
+
+.about-hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+}
+
+.about-hero-trust-item {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--brand);
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(11, 59, 90, 0.12);
+  box-shadow: 0 1px 0 rgba(11, 59, 90, 0.04);
+}
+
+.about-team {
+  padding: 0;
+  overflow: hidden;
+  border-color: rgba(14, 116, 144, 0.16);
+  background: linear-gradient(135deg, #f8fbff 0%, #ffffff 48%, rgba(191, 230, 255, 0.18) 100%);
+}
+
+.about-team-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: stretch;
+  min-height: 0;
+}
+
+.about-team-media {
+  position: relative;
+  margin: 0;
+  min-height: clamp(280px, 38vw, 420px);
+  background: linear-gradient(180deg, rgba(11, 59, 90, 0.06) 0%, rgba(14, 116, 144, 0.1) 100%);
+}
+
+.about-team-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.about-team-badge {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  margin: 0;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
+  box-shadow: 0 8px 24px rgba(11, 59, 90, 0.28);
+}
+
+.about-team-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.65rem;
+  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 3.5vw, 2.25rem);
+}
+
+.about-team-kicker {
+  margin: 0;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brand-2);
+}
+
+.about-team-title {
+  margin: 0;
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--brand);
+}
+
+.about-team-lead {
+  margin: 0;
+  font-size: clamp(0.98rem, 1.6vw, 1.05rem);
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.about-team-points {
+  margin: 0.25rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.about-team-points li {
+  position: relative;
+  padding-left: 1.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.about-team-points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: linear-gradient(145deg, var(--brand-2) 0%, var(--brand) 100%);
+  box-shadow: 0 0 0 3px rgba(14, 116, 144, 0.15);
+}
+
+.about-team-cta {
+  align-self: flex-start;
+  margin-top: 0.5rem;
 }
 
 .about-content {
@@ -3869,6 +4013,19 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
     grid-template-columns: 1fr;
   }
 
+  .about-team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-team-media {
+    min-height: clamp(320px, 70vw, 440px);
+  }
+
+  .about-team-copy {
+    padding-top: 1.5rem;
+    padding-bottom: 1.75rem;
+  }
+
   .about-cta-inner {
     flex-direction: column;
     align-items: stretch;
@@ -3889,16 +4046,21 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
   }
 
   .header-inner {
-    gap: 0.5rem;
+    gap: 0.55rem;
     min-width: 0;
     flex-wrap: nowrap;
+  }
+
+  .site-header .brand {
+    margin-inline-start: 0;
   }
 
   .brand {
     flex: 0 1 auto;
     min-width: 0;
-    max-width: min(52%, 11.5rem);
-    overflow: hidden;
+    max-width: min(58%, 13rem);
+    overflow: visible;
+    margin-inline-end: 0;
   }
 
   .nav-toggle {
@@ -3933,9 +4095,9 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
   }
 
   .brand-logo {
-    max-height: 78px;
-    max-width: 100%;
-    transform: scale(1.22);
+    max-height: 72px;
+    max-width: min(9.5rem, 38vw);
+    transform: scale(1.47);
     transform-origin: left center;
   }
 
@@ -4158,6 +4320,16 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
     height: min(220px, 42vw);
   }
 
+  .content--products-catalog .product-card--showcase .product-media--photo .product-image,
+  .content--products-catalog .product-card--showcase .product-image--landscape {
+    height: 13.5rem;
+    max-height: 13.5rem;
+  }
+
+  .content--products-catalog .product-card--showcase .product-media--photo {
+    min-height: 15.75rem;
+  }
+
   .product-detail-image {
     height: min(280px, 48vh);
   }
@@ -4178,12 +4350,14 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
   }
 
   .brand-logo {
-    max-width: 100%;
-    transform: scale(1.12);
+    max-width: min(8.25rem, 36vw);
+    max-height: 64px;
+    transform: scale(1.27);
+    transform-origin: left center;
   }
 
   .brand {
-    max-width: min(48%, 10rem);
+    max-width: min(52%, 9.5rem);
   }
 
   .footer-logo {

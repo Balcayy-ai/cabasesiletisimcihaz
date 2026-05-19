@@ -254,6 +254,33 @@
       photoContain: true,
       photoLandscape: true,
     },
+    "sarj-edilebilir-isitme": {
+      pageTitle: "Cab As İşitme | Şarj Edilebilir İşitme Cihazları – Ürün Detayı",
+      metaDescription:
+        "Şarj edilebilir işitme cihazları: lityum-iyon, çevre dostu kullanım, gece şarj ile gün boyu performans. Cab As İşitme ile bilgi alın.",
+      title: "Şarj Edilebilir İşitme Cihazları – Ürün Detayı",
+      subtitle: "Şarj edilebilir teknoloji · Lityum-iyon · Masaüstü şarj ünitesi",
+      image: "./images/Desktop-Charger-Motion-P-SP-X_1920x1080.jpg",
+      imageWidth: 1920,
+      imageHeight: 1080,
+      imageAlt: "Signia masaüstü şarj ünitesinde şarj olan işitme cihazları",
+      introHeading: "Şarj edilebilir işitme cihazları",
+      lead:
+        "Şarj edilebilir işitme cihazları, sürekli küçük piller satın alma ve bunları değiştirme zahmetini tamamen ortadan kaldıran, çevre dostu ve pratik çözümlerdir. Gelişmiş lityum-iyon teknolojileri sayesinde, cihazları geceden şarj ünitesine bırakarak gün boyunca kesintisiz ve yüksek performanslı bir ses deneyimi elde edersiniz. Özellikle el becerisi veya görme yetisi zayıf olan kullanıcılar için, pillerle uğraşmak yerine cihazı doğrudan şarj yuvasına koyabilme kolaylığı büyük bir konfor sağlar.",
+      hideNote: true,
+      featuresHeading: "Öne çıkan özellikler",
+      features: [
+        "Sürekli pil satın alma ve değiştirme zahmeti yok",
+        "Çevre dostu ve pratik günlük kullanım",
+        "Gelişmiş lityum-iyon şarj teknolojisi",
+        "Gece şarj ünitesine bırakarak gün boyu kullanım",
+        "El becerisi veya görme zayıflığında kolay şarj",
+        "Masaüstü şarj ünitesi ile güvenli yerleştirme",
+      ],
+      waMessage: "Merhaba, şarj edilebilir işitme cihazları hakkında bilgi almak istiyorum.",
+      photoContain: true,
+      photoLandscape: true,
+    },
   };
 
   const SITE_ORIGIN = "https://cabasesisitme.com";
@@ -580,7 +607,7 @@
   if (!document.querySelector('link[rel="apple-touch-icon"]')) {
     const appleIcon = document.createElement("link");
     appleIcon.rel = "apple-touch-icon";
-    appleIcon.href = "./images/brand-logo.png";
+    appleIcon.href = "./images/İşitme_Cihazları_Yazısı_şeffaf_202605191719.jpeg";
     document.head.appendChild(appleIcon);
   }
 
