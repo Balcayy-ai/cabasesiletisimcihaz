@@ -1705,36 +1705,40 @@ body.has-nav-open {
   min-height: 0;
 }
 
+.about-team-media,
+.about-team-copy {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .about-team-media {
-  position: relative;
+  display: block;
   margin: 0;
-  min-height: clamp(280px, 38vw, 420px);
+  overflow: hidden;
   background: linear-gradient(180deg, rgba(11, 59, 90, 0.06) 0%, rgba(14, 116, 144, 0.1) 100%);
 }
 
 .about-team-img {
   display: block;
   width: 100%;
-  height: 100%;
-  min-height: inherit;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  max-height: min(520px, 72vh);
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
 }
 
-.about-team-badge {
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
+.about-team-caption {
   margin: 0;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  font-size: 0.78rem;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
   font-weight: 800;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fff;
-  background: linear-gradient(135deg, var(--brand) 0%, var(--brand-2) 100%);
-  box-shadow: 0 8px 24px rgba(11, 59, 90, 0.28);
+  letter-spacing: 0.02em;
+  color: var(--brand);
+  background: #fff;
+  border-top: 1px solid rgba(11, 59, 90, 0.1);
 }
 
 .about-team-copy {
@@ -4017,8 +4021,10 @@ main.site-motion .button-whatsapp:not(.wa-lead-submit):hover {
     grid-template-columns: 1fr;
   }
 
-  .about-team-media {
-    min-height: clamp(320px, 70vw, 440px);
+  .about-team-img {
+    aspect-ratio: 4 / 5;
+    max-height: min(480px, 65vh);
+    object-position: center 15%;
   }
 
   .about-team-copy {
