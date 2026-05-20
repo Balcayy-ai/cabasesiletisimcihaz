@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cabasesisitme.com/sitemap.xml
+Sitemap: https://cabasesisitmecihazlari.com/sitemap.xml

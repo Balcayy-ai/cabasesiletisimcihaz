@@ -283,7 +283,7 @@
     },
   };
 
-  const SITE_ORIGIN = "https://cabasesisitme.com";
+  const SITE_ORIGIN = "https://cabasesisitmecihazlari.com";
 
   const absUrl = (path) => {
     if (!path) return SITE_ORIGIN;
