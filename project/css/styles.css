@@ -1367,6 +1367,7 @@ body.has-nav-open {
   overflow: hidden;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   line-height: 1.45;
   font-size: 0.9375rem;
   color: var(--muted);
